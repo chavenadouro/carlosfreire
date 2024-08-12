@@ -24,6 +24,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            flex-direction: column;
         }
 
         header img {
@@ -126,7 +127,7 @@
             border-radius: 10px;
             margin-top: 50px;
             width: 100%;
-            max-width: 1200px;
+            max-width: 1400px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -136,6 +137,38 @@
             color: #333;
             line-height: 1.6;
             text-align: justify;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            text-align: center;
+            max-width: 45%;
+        }
+
+        .team-member img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            font-size: 1.8rem;
+            color: #4caf50;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.5;
         }
 
         #contact {
@@ -209,6 +242,16 @@
                 margin-bottom: 15px;
                 width: 100%;
             }
+
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member {
+                max-width: 80%;
+                margin-bottom: 30px;
+            }
         }
     </style>
 </head>
@@ -252,20 +295,6 @@
                     </div>
                 </div>
                 <div class="service">
-                    <img src="https://via.placeholder.com/300x200?text=Gestão+de+Registros+Médicos" alt="Gestão de Registros Médicos">
-                    <div>
-                        <h3>Gestão de Registros Médicos</h3>
-                        <p>Mantenha todos os registros de seus pacientes organizados e acessíveis com nossos sistemas seguros de gestão eletrônica.</p>
-                    </div>
-                </div>
-                <div class="service">
-                    <img src="https://via.placeholder.com/300x200?text=Portal+do+Paciente" alt="Portal do Paciente">
-                    <div>
-                        <h3>Portal do Paciente</h3>
-                        <p>Ofereça aos seus pacientes um portal onde podem acessar informações de saúde, agendar consultas, e muito mais.</p>
-                    </div>
-                </div>
-                <div class="service">
                     <img src="https://via.placeholder.com/300x200?text=Telemedicina" alt="Telemedicina">
                     <div>
                         <h3>Plataforma de Telemedicina</h3>
@@ -278,6 +307,19 @@
         <section id="about">
             <h2>Sobre Nós</h2>
             <p>Somos especialistas em desenvolver soluções de automação para o setor de saúde e bem-estar. Nosso objetivo é ajudar clínicas, consultórios e profissionais de saúde a otimizar seus processos, economizar tempo e focar no que realmente importa: o cuidado com seus pacientes. Nossa equipe é composta por profissionais com vasta experiência em tecnologia e no setor de saúde, comprometidos em oferecer as melhores soluções personalizadas para cada cliente.</p>
+
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/250x250?text=Pessoa+1" alt="Pessoa 1">
+                    <h3>Dr. João Silva</h3>
+                    <p>Especialista em gestão de clínicas, João possui mais de 15 anos de experiência em saúde e automação de processos.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/250x250?text=Pessoa+2" alt="Pessoa 2">
+                    <h3>Dra. Maria Souza</h3>
+                    <p>Com formação em engenharia de sistemas e experiência na área de saúde, Maria é responsável por desenvolver soluções tecnológicas inovadoras.</p>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
